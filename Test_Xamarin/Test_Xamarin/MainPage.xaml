@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Test_Xamarin.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="DarkCyan">
+
+    <StackLayout>
+        <Button
+            Margin="0,200,0,0"
+            BackgroundColor="Green"
+            BorderColor="White"
+            BorderWidth="3"
+            CornerRadius="100"
+            HeightRequest="200"
+            HorizontalOptions="Center"
+            Text="Начать"
+            TextColor="White"
+            VerticalOptions="Center"
+            WidthRequest="200" 
+            Clicked="Button_Clicked"/>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Test_Xamarin.Quest_1"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundImageSource="fin.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame
+                x:Name="frameosn"
+                Padding="0"
+                
+                Margin="0,30,0,30"
+                BackgroundColor="Transparent"
+                BorderColor="White"
+                CornerRadius="20"
+                HeightRequest="400"
+                HorizontalOptions="Center"
+                IsVisible="False"
+                Opacity="1"
+                VerticalOptions="Center"
+                WidthRequest="300">
+                <Frame.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Offset="0.1" Color="DarkBlue" />
+                        <GradientStop Offset="1.0" Color="Purple" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Image
+                    Aspect="Fill"
+                    x:Name="img"
+                    HeightRequest="500"
+                    HorizontalOptions="Center"
+                    WidthRequest="700" />
+            </Frame>
+
+            <Button
+                x:Name="btn1"
+                Margin="0,0,0,20"
+                BackgroundColor="Gray"
+                BindingContext="quest"
+                BorderColor="White"
+                BorderWidth="3"
+                Clicked="btn1_Clicked"
+                CornerRadius="20"
+                HeightRequest="70"
+                HorizontalOptions="Center"
+                IsVisible="False"
+                Opacity="0.7"
+                
+                VerticalOptions="Center"
+                WidthRequest="300" />
+            <Button
+                x:Name="btn2"
+                Margin="0,0,0,20"
+                BackgroundColor="Gray"
+                BorderColor="White"
+                BorderWidth="3"
+                Clicked="btn2_Clicked"
+                CornerRadius="20"
+                HeightRequest="70"
+                HorizontalOptions="Center"
+                IsVisible="False"
+                Opacity="0.7"
+                VerticalOptions="Center"
+                WidthRequest="300" />
+            <Button
+                x:Name="btn3"
+                Margin="0,0,0,20"
+                BackgroundColor="Gray"
+                BorderColor="White"
+                BorderWidth="3"
+                Clicked="btn3_Clicked"
+                CornerRadius="20"
+                HeightRequest="70"
+                HorizontalOptions="Center"
+                IsVisible="False"
+                Opacity="0.7"
+                VerticalOptions="Center"
+                WidthRequest="300" />
+            <Button
+                x:Name="btn4"
+                Margin="0,0,0,20"
+                BackgroundColor="White"
+                BorderColor="White"
+                BorderWidth="3"
+                TextColor="black"
+                Clicked="btn4_Clicked"
+                CornerRadius="20"
+                HeightRequest="70"
+                HorizontalOptions="Center"
+                IsVisible="False"
+                Opacity="0.7"
+                VerticalOptions="Center"
+                WidthRequest="300" />
+            <Button
+                x:Name="btn5"
+                Margin="0,0,0,20"
+                BackgroundColor="Gray"
+                BorderColor="White"
+                BorderWidth="3"
+                Clicked="btn5_Clicked"
+                CornerRadius="20"
+                HeightRequest="70"
+                HorizontalOptions="Center"
+                IsVisible="False"
+                Opacity="0.7"
+                VerticalOptions="Center"
+                WidthRequest="300" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+                <Button
+                    x:Name="last"
+                    Margin="50,20,0,20"
+                    BackgroundColor="Gray"
+                    BorderColor="White"
+                    BorderWidth="3"
+                    Clicked="last_Clicked"
+                    CornerRadius="100"
+                    FontAttributes="Bold"
+                    FontSize="30"
+                    HeightRequest="100"
+                    HorizontalOptions="Start"
+                    IsVisible="False"
+                    Text="&lt;"
+                    TextColor="White"
+                    VerticalOptions="Center"
+                    WidthRequest="100">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Offset="0.1" Color="DarkBlue" />
+                            <GradientStop Offset="1.0" Color="Purple" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button
+                    x:Name="Skip"
+                    Margin="0,20,50,20"
+                    BackgroundColor="Gray"
+                    BorderColor="White"
+                    BorderWidth="3"
+                    Clicked="Button_Clicked"
+                    CornerRadius="100"
+                    FontAttributes="Bold"
+                    FontSize="30"
+                    HeightRequest="100"
+                    HorizontalOptions="End"
+                    IsVisible="False"
+                    Text="&gt;"
+                    TextColor="White"
+                    VerticalOptions="Center"
+                    WidthRequest="100">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Offset="0.1" Color="DarkBlue" />
+                            <GradientStop Offset="1.0" Color="Purple" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Grid>
+
+
+
+
+            <Label
+                x:Name="lbIQ"
+                Margin="0,200,0,0"
+                FontAttributes="Bold"
+                FontSize="50"
+                HorizontalOptions="Center"
+                Text="IQ Тест"
+                TextColor="white"
+                VerticalOptions="Center" />
+            <Button
+                x:Name="startbtn"
+                Margin="20,80,20,20"
+                BorderColor="Gray"
+                BorderWidth="3"
+                Clicked="startbtn_Clicked"
+                CornerRadius="100"
+                FontAttributes="Bold"
+                FontSize="30"
+                HeightRequest="100"
+                HorizontalOptions="Center"
+                Opacity="0.8"
+                Text="Начать"
+                TextColor="White"
+                WidthRequest="250">
+                <Button.Background>
+                    <LinearGradientBrush  EndPoint="1,0">
+                        <GradientStop Offset="0.4" Color="purple" />
+                        <GradientStop Offset="1.0" Color="blue" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
